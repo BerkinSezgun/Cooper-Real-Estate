@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./css/style.css"> <!-- Link the external stylesheet -->
+    <script src="./js/script.js" defer></script> <!-- Link the external JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="forsale.html">FOR SALE</a></li>
+            <li><a href="property1.html">PROPERTY 1</a></li>
+            <li><a href="property2.html">PROPERTY 2</a></li>
+            <li><a href="property3.html">PROPERTY 3</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="site.html">SITE MAP/CREDITS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact-form">
+            <h2 style="padding-bottom: 15px;">Send us your preferences</h2>
+            <form id="contact-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="property-type">Property Type:</label>
+                <select id="property-type" name="property-type" required>
+                    <option value="">Select Property Type</option>
+                    <option value="house">House</option>
+                    <option value="condo">Condominium</option>
+                </select>
+                
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" required>
+                
+                <label for="bathrooms">Number of Bathrooms:</label>
+                <input type="number" id="bathrooms" name="bathrooms" required>
+                
+                <label for="price-range">Price Range:</label>
+                <input type="text" id="price-range" name="price-range" required>
+                
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                
+                <button type="button" id="submit-button">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Real Estate Agent. All rights reserved.</p>
+    </footer>
+</body>
+</html>
